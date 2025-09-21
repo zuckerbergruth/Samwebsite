@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>STORE</title>
+  <style>
+    body {
+      background: url('Des.jpg');
+      background-size: 13px 127px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    a.ajlee {
+      color: rgba(245,243,243,0.7);
+      font-size: 31px;
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+    }
+    a.ajlee:hover {
+      color: white;
+    }
+
+    h2 {
+      color: white;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    p {
+      text-align: center;
+      font-size: 21px;
+      color: white;
+      font-family: cursive;
+    }
+
+    /* product grid */
+    .products {
+      display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.25);
+      border-radius: 7px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card h5 {
+      margin: 5px 0;
+    }
+
+    .but {
+      margin-top: 10px;
+      width: 120px;
+      padding: 8px;
+      border: none;
+      border-radius: 2rem 3px;
+      background: white;
+      cursor: pointer;
+    }
+    .but:hover {
+      background: black;
+      color: white;
+      transition: 0.3s;
+    }
+    .card {
+  background: rgba(255,255,255,0.25);
+  border-radius: 7px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-9px); /* lift up */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05); /* zoom image small */
+}
+  </style>
+</head>
+<body>
+  <a href="Greatest.html" class="ajlee">《</a>
+  <h2>🛒 Welcome to the Store Page 🛒</h2>
+  <p>OUR COLLECTION</p>
+
+  <div class="products">
+    <div class="card">
+      <img src="Fi.jpg" alt="Daphne Bow Loafer">
+      <h5>The Daphne Bow Loafer</h5>
+      <h5>PRICE: $70.00</h5>
+      <button class="but">PURCHASE</button>
+    </div>
+
+    <div class="card">
+      <img src="Th.jpg" alt="New Balance 9060">
+      <h5>New Balance 9060 Triple Black</h5>
+      <h5>PRICE: $66.00</h5>
+      <button class="but">PURCHASE</button>
+    </div>
+
+    <div class="card">
+      <img src="Mav.jpg" alt="TrailBlaizer Sneaker">
+      <h5>The TrailBlaizer Sneaker Boot</h5>
+      <h5>PRICE: $72.00</h5>
+      <button class="but">PURCHASE</button>
+    </div>
+
+    <div class="card">
+      <img src="Saw.jpg" alt="Dynasty Dress Shoe">
+      <h5>The Dynasty Dress Shoe</h5>
+      <h5>PRICE: $79.00</h5>
+      <button class="but">PURCHASE</button>
+    </div>
+
+    <div class="card">
+      <img src="Mer.jpg" alt="Crimson King Oxford">
+      <h5>The Crimson King Oxford</h5>
+      <h5>PRICE: $59.00</h5>
+      <button class="but">PURCHASE</button>
+    </div>
+  </div>
+</body>
+</html>
